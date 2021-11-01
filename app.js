@@ -1,11 +1,9 @@
-var Angle1 = document.querySelector("#angle1")
-var Angle2 = document.querySelector("#angle2")
-var Angle3 = document.querySelector("#angle3")
+var Angles = document.querySelectorAll(".angle")
 var checkBtn = document.querySelector("#check-btn")
 var resultDiv = document.querySelector("#result-div")
 
 function clickHandler() {
-    var angle1Value = Angle1.value, angle2Value = Angle2.value, angle3Value = Angle3.value
+    var angle1Value = Angles[0].value, angle2Value = Angles[1].value, angle3Value = Angles[2].value
 
     if (angle1Value >= 0 && angle2Value >= 0 && angle3Value >= 0) {
         var Sum = sumOfAngles(Number(angle1Value), Number(angle2Value), Number(angle3Value))
