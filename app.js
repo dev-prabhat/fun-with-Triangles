@@ -5,7 +5,7 @@ var resultDiv = document.querySelector("#result-div")
 function clickHandler() {
     var angle1Value = Angles[0].value, angle2Value = Angles[1].value, angle3Value = Angles[2].value
 
-    if (angle1Value >= 0 && angle2Value >= 0 && angle3Value >= 0) {
+    if (angle1Value > 0 && angle2Value > 0 && angle3Value > 0) {
         var Sum = sumOfAngles(Number(angle1Value), Number(angle2Value), Number(angle3Value))
         if (Sum === 180)
             resultDiv.innerText = "These angle form a valid Triangle"
