@@ -76,6 +76,7 @@ body{
     background-color: var(--bg-color);
     color: var(--text-color);
     border-color: var(--text-color);
+    cursor: pointer;
 }
 
 #output-div{
