@@ -1,13 +1,11 @@
-var sideInput = document.querySelectorAll(".side-input")
-var resultBtn = document.querySelector("#result-btn")
-var outputDiv = document.querySelector("#output-div")
+const sideInput = document.querySelectorAll(".side-input")
+const resultBtn = document.querySelector("#result-btn")
+const outputDiv = document.querySelector("#output-div")
 
 
-function sumOfSquare(a, b) {
-    return a * a + b * b
-}
+const sumOfSquare = (a, b) => a * a + b * b
 
-function clickHandler() {
+const clickHandler = () => {
     var squareSum = 0, hypotenuse = 0;
     squareSum = sumOfSquare(Number(sideInput[0].value), Number(sideInput[1].value))
     hypotenuse = Math.sqrt(squareSum)
