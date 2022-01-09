@@ -1,8 +1,11 @@
-var Angles = document.querySelectorAll(".angle")
-var checkBtn = document.querySelector("#check-btn")
-var resultDiv = document.querySelector("#result-div")
+const Angles = document.querySelectorAll(".angle")
+const checkBtn = document.querySelector("#check-btn")
+const resultDiv = document.querySelector("#result-div")
 
-function clickHandler() {
+
+const sumOfAngles = (angle1, angle2, angle3) => angle1 + angle2 + angle3
+
+const clickHandler = () => {
     var angle1Value = Angles[0].value, angle2Value = Angles[1].value, angle3Value = Angles[2].value
 
     if (angle1Value > 0 && angle2Value > 0 && angle3Value > 0) {
@@ -18,9 +21,6 @@ function clickHandler() {
     }
 }
 
-function sumOfAngles(angle1, angle2, angle3) {
-    var sum = angle1 + angle2 + angle3
-    return sum;
-}
+
 
 checkBtn.addEventListener("click", clickHandler)
